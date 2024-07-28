@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: black;
 }
 
 /* Shared Style----------- */
@@ -43,6 +44,7 @@ body{
     padding: 6px 20px;
     color: #fff;
     margin-left: -14px;
+   
 }
 .para{
     color: rgba(255, 255, 255, 0.5);
@@ -114,6 +116,7 @@ header .head h2{
     color: rgb(230, 83, 60);
     font-size: 2rem;
     font-weight: 800;
+    font-style: italic;
 }
 header ul{
    display: flex;
@@ -179,7 +182,7 @@ header ul li{
 }
 .habit-header h2{
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 900;
 }
 .habit-header p{
@@ -242,6 +245,187 @@ header ul li{
     border-radius: 18px;
 }
 
+/* trainning-section-------------- */
+.left-header{
+    text-align: left;
+    margin-left: -470px;
+}
+
+
+/* table section--------------- */
+.table-section{
+    background: rgb(34, 34, 34);
+    width: 100%;
+    height: fit-content;
+    padding: 25px 16px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.table-section .table1{
+    width: 30%;
+    height: fit-content;
+    color: #fff;
+}
+.table-section .table1 table{
+    width: 310px;
+    height: 216px;
+}
+.table-section .table1 table,tr,td,th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding: 4px 6px;
+    text-align: left;
+}
+.table-section .table1  table td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+.table-section .calculator{
+   width: 45%;
+   height: fit-content;
+   /* border: 2px solid red; */
+}
+.table-section .calculator h2{
+  color: #fff;
+
+}
+.table-section .calculator p{
+    width: 75%;
+    text-align: justify;
+    line-break: normal;
+  }
+.table-section .calculator input,select{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    margin: 5px 8px 6px 0;
+    border: 0;
+    outline: 0;
+}
+.table-section .calculator select{
+    color: rgba(255, 255, 255, 0.4);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    width: 230px;
+}
+.table-section .calculator .last{
+    width: 472px;
+}
+
+/* trainer section*/
+.trainer .trainer-head{
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+.trainer .trainer-head h2{
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+.trainer .trainer-head p{
+   margin-top: -12px;
+}
+.trainer .flex-imgs{
+   width: 80%;
+   height: 580px;
+   border-radius: 18px;
+   background: rgba(255, 255, 255, 0.1);
+   margin: 20px auto;
+   padding: 20px;
+}
+.trainer .flex-imgs .img-leyr1{
+  display: flex;
+  justify-content: space-evenly;
+}
+.trainer .flex-imgs .img-leyr1 .img-item{
+  width: 33%;
+  height: auto;
+  position: relative;
+
+}
+.trainer .flex-imgs .img-leyr1 .img-item .black{
+  width: 95%;
+  height: 80%;
+  border-radius: 18px;
+  background: rgba(0, 0, 0,0.2);
+  position: absolute;
+}
+.trainer .flex-imgs .img-leyr1 .name{
+  position: absolute;
+  color: #fff;
+  top: 180px;
+  left: 30px;
+}
+.trainer .flex-imgs .img-leyr1 p{
+  margin-top: -14px;
+}
+
+.trainer .flex-imgs .img-leyr1 .img-item img{
+  width: 95%;
+  height: 80%;
+  border-radius: 18px;
+}
+.flex-imgs .top{
+  margin-top: -45px;
+}
+
+/* footer area========== */
+
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    margin-top: 80px;
+}
+footer .div{
+    width: 35%;
+    margin: 25px auto;
+    text-align: center;
+}
+footer .footer-main{
+   width: 80%;
+   height: 200px;
+   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+   display: flex;
+   margin: 0 auto;
+   justify-content: space-around;
+   align-items: center;
+}
+footer .footer-head{
+    width: 35%;
+    height: fit-content;
+}
+footer .footer-head h1{
+   color: rgb(230, 83, 60);
+   font-size: 2.8rem;
+   font-weight: 900;
+   font-style: italic;
+   margin-top: -10px;
+}
+footer .footer-head p{
+  margin-top: -15px;
+  line-height: 20px;
+}
+footer .footer-main .item1 h2, .item2 h2{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+ }
+footer .footer-main .item1 ul, .item2 ul{
+    list-style: none;
+ }
+footer .footer-main .item1 li, .item2 li{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    margin-left: -38px;
+    line-height: 30px;
+ }
+
 
 
 /* media query----------- */
@@ -251,7 +435,7 @@ header ul li{
         padding: 10px;
     }
    
-   .head , .main , .habit-header ,.run-section{
+   .head , .main , .habit-header ,.run-section,.table-section,.img-leyr1{
     flex-direction: column;
     height: fit-content;
     width: 95%;
@@ -289,7 +473,7 @@ header ul li{
    .habit-section{
     width: 100%;
 }
-.run-section{
+.run-section ,.table-section{
     padding: 0;
     margin: 15px;
 }
@@ -303,5 +487,65 @@ header ul li{
   }
 .run-section .run-img img{
     width: 90%;
+  }
+  .table-section .table1 ,.table-section .calculator{
+    width: 95%;
+    margin: 10px auto;
+    text-align: left;
+  }
+  .table-section .calculator input{
+    width: 30%;
+  }
+
+  .table-section .calculator select{
+    width: 46%;
+  }
+  .table-section .calculator p{
+    width: 95%;
+  }
+  .table-section .calculator .last{
+    width: 96%;
+  }
+  .trainer .flex-imgs{
+    height: fit-content;
+  }
+  .trainer .flex-imgs .top{
+   display: none;
+  }
+  .trainer .trainer-head{
+    width: 90%;
+}
+
+  .trainer .flex-imgs .img-leyr1 .img-item{
+    width: 100%;
+    margin: 15px 0 15px 0;
+  }
+  .trainer .flex-imgs .img-leyr1 .top:nth-last-child(2){
+    display: hidden;
+  }
+  .trainer .flex-imgs .img-leyr1 .img-item .black{
+    width: 100%;
+    height: fit-content;
+    
+  }
+  footer{
+    padding: 0;
+  }
+  footer .div{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  footer .footer-main{
+    flex-direction: column;
+    text-align: left;
+    width: 95%;
+    height: fit-content;
+    padding: 10px;
+  }
+  footer .footer-head,.item1,.item2{
+    width: 95%;
   }
   }

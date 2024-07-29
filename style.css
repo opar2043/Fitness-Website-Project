@@ -111,7 +111,7 @@ header{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.7) 100%);
     width: 100%;
     height: fit-content;
-    padding: 10px 40px;
+    padding: 0px 40px;
 }
 header .head{
     width: 80%;
@@ -125,7 +125,7 @@ header .head .icon{
 }
 header .head h2{
     color: rgb(230, 83, 60);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
     font-style: italic;
 }
@@ -157,10 +157,14 @@ header ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* border: 1px solid red; */
+
 }
 .main .main1{
     width: 40%;
     height: fit-content;
+    /* border: 1px solid red; */
+    margin-top: -100px;
 }
 .main .main1 h2{
    font-size: 3rem;

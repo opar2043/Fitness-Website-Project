@@ -1,11 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: black;
+}
+span{
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* Shared Style----------- */
@@ -111,6 +119,9 @@ header .head{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+header .head .icon{
+    display: none;
 }
 header .head h2{
     color: rgb(230, 83, 60);
@@ -372,6 +383,72 @@ header ul li{
 .flex-imgs .top{
   margin-top: -45px;
 }
+/* workout---------------------- */
+.workout{
+  width: 100%;
+  height: fit-content;
+  padding: 30px 20px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.workout .workout-head h4{
+  color: rgb(230, 83, 60);
+}
+.workout .workout-head h2{
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: -0.7rem;
+}
+.workout .icons {
+  width: 70%;
+  display: flex;
+  height: fit-content;
+  margin: 20px auto;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.workout .icons .medi-icon{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 14px 2px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.19), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.workout .icons .medi-icon p{
+  margin-top: -2px;
+}
+
+.workout .icons .medi-icon .icon{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgb(34, 34, 34);
+  position: relative;
+}
+.workout .icons .medi-icon .icon .fa-solid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: rgb(230, 83, 60);
+  text-align: center;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
 
 /* footer area========== */
 
@@ -435,15 +512,18 @@ footer .footer-main .item1 li, .item2 li{
         padding: 10px;
     }
    
-   .head , .main , .habit-header ,.run-section,.table-section,.img-leyr1{
+   .main , .habit-header ,.run-section ,
+   .table-section,.img-leyr1, .workout .icons{
     flex-direction: column;
     height: fit-content;
     width: 95%;
     text-align: center;
     justify-content: center;
+    
    }
-   .main .main1 , .run-section .run-section1,.run-section{
+   .main .main1 , .run-section .run-section1,.run-section {
     width: 95%;
+    margin: 0 auto;
    }
    .main .main2{
       width: 95%;
@@ -508,6 +588,8 @@ footer .footer-main .item1 li, .item2 li{
   }
   .trainer .flex-imgs{
     height: fit-content;
+    padding: 10px;
+    margin-right: 0;
   }
   .trainer .flex-imgs .top{
    display: none;
@@ -528,6 +610,15 @@ footer .footer-main .item1 li, .item2 li{
     height: fit-content;
     
   }
+  .workout .icons{
+    margin: 0;
+  }
+  .workout .icons .medi-icon{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* --------footer--------- */
   footer{
     padding: 0;
   }
@@ -547,5 +638,18 @@ footer .footer-main .item1 li, .item2 li{
   }
   footer .footer-head,.item1,.item2{
     width: 95%;
+  }
+  .run-section,.table-section , .trainer .flex-imgs ,.table-section .table1 table{
+    width: 100%;
+  }
+  .head ul{
+    display: none;
+  }
+  header .head .icon{
+   display: block;
+   color: rgb(230, 83, 60);
+   font-size: 1.7rem;
+   font-weight: 900;
+   cursor: pointer;
   }
   }

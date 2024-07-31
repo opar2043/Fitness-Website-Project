@@ -20,11 +20,11 @@ span{
 .btn{
     border-radius: 39px;
     background: rgb(230, 83, 60);
-    border: 0px;
     font-size: 1rem;
     padding: 8px 18px;
     color: #fff;
     cursor: pointer;
+    border: 1px solid rgb(230, 83, 60);
 }
 .big{
     width: 170px;
@@ -47,7 +47,7 @@ span{
 .homeBtn{
     border-radius: 39px;
     background: rgb(230, 83, 60);
-    border: 0px;
+    border: 1px solid rgb(230, 83, 60);
     font-size: 1rem;
     padding: 6px 20px;
     color: #fff;
@@ -108,9 +108,9 @@ span{
 
 /* header section------------ */
 header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.7) 100%);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.2),rgb(17, 17, 17) 100%);
     width: 100%;
-    height: fit-content;
+    height: 663px;
     padding: 0px 40px;
 }
 header .head{
@@ -258,6 +258,122 @@ header ul li{
     width: 100%;
     height: auto;
     border-radius: 18px;
+}
+
+/* trainning section--------------------- */
+
+.main2{
+   width: 80%;
+   height: auto;
+   margin: 0px auto;
+   /* border: 1px solid red; */
+   margin-bottom: 30px;
+}
+.main2 .head-main{
+   width: 42%;
+   text-align: left;
+   /* border: 1px solid red; */
+}
+.main2 .head-main h2{
+   font-size: 2.3rem;
+   font-weight: 900;
+   color: #fff;
+}
+
+.main2 .head-main p{
+   margin-top: -15px;
+}
+
+.main2 .grid-img6{
+  width: 100%;
+  height: fit-content;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.main2 .grid-img6 .grid-img3{
+   width: 100%;
+   height: 210px;
+   display: grid;
+   grid-template-columns: 24% 52% 24%;
+}
+.main2 .grid-img6 .grid-img4{
+   width: 100%;
+   height: 210px;
+   display: grid;
+   grid-template-columns: 45% 25% 30%;
+   margin-top: -10px;
+}
+.main2 .grid-img6 .grid-img3 .child{
+   /* height: 100%; */
+   position: relative;
+}
+.main2 .grid-img6 .grid-img4 .child{
+   /* height: 100%; */
+   position: relative;
+}
+.main2 .grid-img6 .grid-img4 p,.grid-img3 p{
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  bottom: 15px;
+  left: 15px;
+}
+.main2 .grid-img6 .grid-img4 .four p , .grid-img3 .two p{
+  right: 15px;
+  top: 15px;
+}
+.main2 .grid-img6  .grid-img3 .one p{
+  color: black;
+  font-weight: 600;
+}
+
+.main2 .grid-img6 .grid-img3 .child .one{
+   height: 200px;
+   width: 100%;
+   position: absolute;
+   background: rgba(6, 255, 210, 0.5);
+}
+.main2 .grid-img6 .grid-img3 .child .two{
+   height: 200px;
+   width: 100%;
+   position: absolute;
+   background: rgba(255, 0, 0, 0.3);
+}
+.main2 .grid-img6 .grid-img3 .child .three{
+   height: 200px;
+   width: 100%;
+   position: absolute;
+   background: rgba(0, 0, 0, 0.5);
+}
+.main2 .grid-img6 .grid-img4 .child .four{
+   height: 200px;
+   width: 100%;
+   position: absolute;
+   background: rgba(0, 0, 0, 0.5);
+}
+.main2 .grid-img6 .grid-img4 .child .five{
+   height: 200px;
+   width: 100%;
+   position: absolute;
+   background: rgba(66, 255, 0, 0.3);
+}
+.main2 .grid-img6 .grid-img4 .child .six{
+   height: 200px;
+   width: 100%;
+   position: absolute;
+   background: rgba(0, 71, 255, 0.3);
+}
+
+.main2 .grid-img6 .grid-img3 .child{
+   /* height: 100%; */
+}
+.main2 .grid-img6 .grid-img3 .child img{
+   width: 100%;
+   height: 200px;
+}
+.main2 .grid-img6 .grid-img4 .child img{
+   width: 100%;
+   height: 200px;
 }
 
 /* trainning-section-------------- */
@@ -428,6 +544,10 @@ header ul li{
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.19), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
+.workout .icons .medi-icon:hover{
+  background-color: rgb(230, 83, 60);
+  transition: 0.4s;
+}
 
 .workout .icons .medi-icon p{
   margin-top: -2px;
@@ -509,11 +629,13 @@ footer .footer-main .item1 li, .item2 li{
 
 
 
-/* media query----------- */
+/* media query small device----------- */
 @media only screen and (max-width: 576px) {
     header{
         margin: 0;
         padding: 10px;
+        height: 1100px;
+        overflow: hidden;
     }
    
    .main , .habit-header ,.run-section ,
@@ -523,7 +645,6 @@ footer .footer-main .item1 li, .item2 li{
     width: 95%;
     text-align: center;
     justify-content: center;
-    
    }
    .main .main1 , .run-section .run-section1,.run-section {
     width: 95%;
@@ -656,4 +777,125 @@ footer .footer-main .item1 li, .item2 li{
    font-weight: 900;
    cursor: pointer;
   }
+  .main2{
+    width: 95%;
+    margin: 20px auto;
+ }
+ .main2 .head-main{
+    width: 100%;
+    margin: 0 auto;
+ }
+ /* .main2 .grid-img6 .grid-img3 .child .three, .grid-img4 .child .six{
+  display: none;
+} */
+ .main2 .grid-img6 .grid-img3{
+  grid-template-columns: 50% 50%;
+}
+ .main2 .grid-img6 .grid-img4{
+  grid-template-columns: 50% 50%;
+}
+.hidden{
+  display: none;
+}
+
+  }
+
+  /* mediuam device */
+  @media only screen and (min-width: 576px) and (max-width: 1024px){
+    header{
+      width: 100%;
+      height: fit-content;
+    }
+    header .head{
+      width: 95%;
+      justify-content: space-between;
+    }
+    header .main{
+      justify-content: space-around;
+      margin: 0;
+    }
+    header .main .main2{
+      width: 40%;
+      height: fit-content;
+      margin-left: 150px;
+    }
+     .main , .habit-header ,.run-section ,
+    .table-section,.img-leyr1, .workout .icons{
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+   }
+   .habit-section{
+   margin: 0 auto;
+   width: 90%;
+   justify-content: center;
+   }
+   .habit-img{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.habit-img .img{
+    width: 250px;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+.habit-img .img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.run-section{
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 20px;
+  align-items: center;
+}
+ .run-section .run-section1{
+  width: 40%;
+  margin-top: -50px;
+  
+}
+.main2 .head-main{
+  width: 90%;
+}
+ .table-section{
+  display: flex;
+  flex-direction: row;
+ }
+ .table-section .calculator{
+  width: 50%;
+ }
+ .table-section .calculator input {
+   width: 340px;
+ }
+ .table-section .calculator #select{
+  width: 400px;
+ }
+ .trainer .flex-imgs{
+  width: 90%;
+  height: fit-content;
+ }
+ .trainer .flex-imgs .img-leyr1 .name{
+  display: none;
+ }
+ .trainer .flex-imgs .img-leyr1{
+  flex-direction: row;
+ }
+ .workout{
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+ }
+ .workout .icons{
+  flex-direction: row;
+  justify-content: center;
+ }
+ footer .footer-main{
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-left: 0;
+ }
+    
   }

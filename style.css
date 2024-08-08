@@ -9,7 +9,11 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: black;
+    width: fit-content;
 }
+ /* .hide{
+  display: none;
+}  */
 span{
   font-family: "Edu AU VIC WA NT Hand", cursive;
   font-weight: 400;
@@ -54,11 +58,13 @@ span{
     margin-left: -14px;
    
 }
+
 .para{
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 400;
     margin-bottom: 10px;
+    line-height: 20px;
 }
 .btn-shadow{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -629,76 +635,137 @@ footer .footer-main .item1 li, .item2 li{
 
 
 
-/* media query small device----------- */
-@media only screen and (max-width: 576px) {
-    header{
-        margin: 0;
-        padding: 10px;
-        height: 1100px;
-        overflow: hidden;
-    }
-   
-   .main , .habit-header ,.run-section ,
-   .table-section,.img-leyr1, .workout .icons{
-    flex-direction: column;
-    height: fit-content;
-    width: 95%;
-    text-align: center;
-    justify-content: center;
-   }
-   .main .main1 , .run-section .run-section1,.run-section {
-    width: 95%;
-    margin: 0 auto;
-   }
-   .main .main2{
-      width: 95%;
+ @media only screen and (max-width: 576px){
+  .para{
+    line-height: 24px;
+  }
+  .hide{
+    display: none;
+  }
+  header{
+      width: 100%;
+      margin: 0;
+      padding: 0px;
+      height: 1100px;
+  }
+  header .head{
+      width: 96%;
       margin: 0 auto;
+      justify-content: space-around;
+     
+  }
+  header .head .icon{
+    display: block;
+    color: rgb(230, 83, 60);
+    font-size: 1.7rem;
+    font-weight: 900;
+    cursor: pointer;
    }
-   .main .main2 img{
-      width: 90%;
-   }
-   .shadow{
-    position: relative;
-    left: 0px;
-   }
-   .shadow1{
-    position: relative;
-    top: 250px;
-    left: 80px;
-   }
-   .habit-img{
-    grid-template-columns: repeat(1,4fr);
-    margin: 30px auto;
-    width: 90%;
-   }
-   .habit-img .img{
-    width: 70%;
+
+
+   header .main , .habit-section , .run-section , .habit-section .table-section{
+    flex-direction: column;
     margin: 0 auto;
-   }
-   .habit-section{
-    width: 100%;
-}
-.run-section ,.table-section{
     padding: 0;
-    margin: 15px;
-}
-.run-section1 .big{
-   width: 90%;
-   height: 45px;
-}
-.run-section .run-img{
+   }
+   
+   .run-section {
+    width: 90%;
+    padding: 0;
+   }
+
+   
+   .run-section .run-section1 .btn , .habit-section .habit-header{
+    width: 100%;
+    margin-top: 20px auto;
+    text-align: left;
+   }
+   .run-section .run-section1 {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+   }
+
+   .run-section .run-img{
     width: 100%;
     margin-top: 30px;
   }
-.run-section .run-img img{
+  .run-section .run-img img{
     width: 90%;
   }
-  .table-section .table1 ,.table-section .calculator{
+
+   header .main  .main1{
+   width: 96%;
+   margin: 0px auto;
+   }
+
+
+   header .main  .main1 .btn{
+    display: inline-block;
+   }
+   header .main  .main1 h2{
+   margin: 20px auto;
+   }
+   header .main  .main1 p{
+   font-size: 1rem;
+   margin: 16px auto;
+   }
+  header .main .main2{
+    width: 96%;
+    margin: 0 auto;
+ }
+ header .main .main2 img{
+    width: 90%;
+    margin: 0 auto;
+ }
+ header .main2 .shadow{
+  position: relative;
+  left: 0px;
+ }
+ header .main2 .shadow1{
+  position: relative;
+  top: 250px;
+  left: 80px;
+ }
+ .habit-section , .habit-section .habit-header {
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+ }
+ .habit-section .habit-img {
+  grid-template-columns: repeat(1,4fr);
+  margin: 30px auto;
+  width: 90%;
+ }
+ .habit-section .habit-img .img{
+    width: 70%;
+    margin: 0 auto;
+ }
+
+ .habit-section .main2{
+  width: 90%;
+  margin: 0 auto;
+ }
+ .habit-section .main2 .head-main{
+  width: 90%;
+ }
+ .habit-section .main2 .grid-img6 .grid-img3{
+    grid-template-columns: 50% 50%;
+  }
+  .habit-section .main2 .grid-img6 .grid-img4{
+    grid-template-columns: 50% 50%;
+  }
+
+
+
+  .habit-section .table-section .table1 ,.table-section .calculator{
     width: 95%;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: left;
   }
-  .table-section .calculator input{
+  .habit-section .table-section .calculator input{
     width: 30%;
   }
 
@@ -709,98 +776,96 @@ footer .footer-main .item1 li, .item2 li{
     width: 95%;
   }
   .table-section .calculator .last{
-    width: 96%;
+    width: 95%;
+  }
+
+  .trainer{
+    width: 90%;
+    margin: 0 auto;
+   
+  }
+  .trainer .trainer-head{
+    width: 85%;
+    margin: 30px auto;
+    text-align: center;
   }
   .trainer .flex-imgs{
+    width: 100%;
+    margin-left: 0;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 20px 0;
     height: fit-content;
-    padding: 10px;
-    margin-right: 0;
   }
+  .trainer .flex-imgs .img-leyr1  {
+    flex-direction: column;
+    
+  }
+  .trainer .flex-imgs .img-leyr1 .img-item{
+    width: 90%;
+    margin: 15px 0 15px 0;
+    margin: 20px auto;
+  }
+  .trainer .flex-imgs .img-leyr1 .img-item img{
+    width: 100%;
+  }
+
   .trainer .flex-imgs .top{
-   display: none;
+    display: none;
+   }
+
+   .trainer .flex-imgs .img-leyr1 .img-item .black{
+    width: 100%;
+    height: 320px; 
   }
   .trainer .trainer-head{
     width: 90%;
 }
+footer{
+  padding: 0;
+  width: 100%;
+}
+footer .div{
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+footer .footer-main{
+  flex-direction: column;
+  text-align: left;
+  width: 95%;
+  height: fit-content;
+  padding: 10px;
+  padding-top: 50px;
+}
+footer .footer-main .footer-head h1{
+  font-size: 4rem;
+}
+footer .footer-head,.item1,.item2{
+  width: 95%;
+}
+.workout{
+  width: 96%;
+  padding: 20px 0;
+}
 
-  .trainer .flex-imgs .img-leyr1 .img-item{
-    width: 100%;
-    margin: 15px 0 15px 0;
-  }
-  .trainer .flex-imgs .img-leyr1 .top:nth-last-child(2){
-    display: hidden;
-  }
-  .trainer .flex-imgs .img-leyr1 .img-item .black{
-    width: 100%;
-    height: fit-content;
-    
-  }
-  .workout .icons{
-    margin: 0;
-  }
-  .workout .icons .medi-icon{
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  /* --------footer--------- */
-  footer{
-    padding: 0;
-  }
-  footer .div{
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    font-size: 16px;
-    text-align: center;
-  }
-  footer .footer-main{
-    flex-direction: column;
-    text-align: left;
-    width: 95%;
-    height: fit-content;
-    padding: 10px;
-  }
-  footer .footer-head,.item1,.item2{
-    width: 95%;
-  }
-  .run-section,.table-section , .trainer .flex-imgs ,.table-section .table1 table{
-    width: 100%;
-  }
-  .head ul{
-    display: none;
-  }
-  header .head .icon{
-   display: block;
-   color: rgb(230, 83, 60);
-   font-size: 1.7rem;
-   font-weight: 900;
-   cursor: pointer;
-  }
-  .main2{
-    width: 95%;
-    margin: 20px auto;
+.workout .icons{
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.workout .icons .medi-icon{
+  width: 80%;
+  margin: 0 auto;
+}
  }
- .main2 .head-main{
-    width: 100%;
-    margin: 0 auto;
- }
- /* .main2 .grid-img6 .grid-img3 .child .three, .grid-img4 .child .six{
-  display: none;
-} */
- .main2 .grid-img6 .grid-img3{
-  grid-template-columns: 50% 50%;
-}
- .main2 .grid-img6 .grid-img4{
-  grid-template-columns: 50% 50%;
-}
-.hidden{
-  display: none;
-}
 
-  }
 
-  /* mediuam device */
+
+
+  /* mediuam device -----------------------------------------------*/
   @media only screen and (min-width: 576px) and (max-width: 1024px){
     header{
       width: 100%;

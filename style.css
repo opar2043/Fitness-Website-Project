@@ -25,7 +25,7 @@ span{
     border-radius: 39px;
     background: rgb(230, 83, 60);
     font-size: 0.9rem;
-    padding: 8px 18px;
+    padding: 8px 17px;
     color: #fff;
     cursor: pointer;
     border: 1px solid rgb(230, 83, 60);
@@ -581,6 +581,7 @@ header ul li{
 }
 
 
+
 /* footer area========== */
 
 footer{
@@ -968,5 +969,8 @@ footer .footer-head,.item1,.item2{
   justify-content: space-between;
   margin-left: 0;
  }
+ .trainer .flex-imgs .img-leyr1 .upper{
+  top: 160px;
+}
     
   }

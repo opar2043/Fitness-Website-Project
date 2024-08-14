@@ -25,7 +25,7 @@ span{
     border-radius: 39px;
     background: rgb(230, 83, 60);
     font-size: 0.9rem;
-    padding: 8px 17px;
+    padding: 8px 16px;
     color: #fff;
     cursor: pointer;
     border: 1px solid rgb(230, 83, 60);
@@ -262,7 +262,7 @@ header ul li{
     height: auto;
 }
 .run-section .run-img img{
-    width: 100%;
+    width: 100%;  
     height: auto;
     border-radius: 18px;
 }
@@ -869,7 +869,10 @@ footer .footer-head,.item1,.item2{
 }
  }
 
-
+ .trainer .flex-imgs .img-leyr1 .upper{
+  top: 168px;
+}
+  
 
 
   /* mediuam device -----------------------------------------------*/
@@ -969,8 +972,5 @@ footer .footer-head,.item1,.item2{
   justify-content: space-between;
   margin-left: 0;
  }
- .trainer .flex-imgs .img-leyr1 .upper{
-  top: 160px;
-}
-    
+  
   }
